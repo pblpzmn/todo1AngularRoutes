@@ -1,0 +1,13 @@
+
+<div *ngFor="let user of users">
+      <a  [routerLink]="['/users/', user.id ]" routerLinkActive="router-link-active"  > {{user.name}}</a>
+</div>
+<div *ngIf="user" > 
+      User Info: {{user | json}}<br><br>
+      User Info:<br><br>
+      user id: {{user.id}}<br>
+      user name: {{user.name}}<br>
+      user email: {{user.email}}<br>
+</div>
+
+<router-outlet></router-outlet>
