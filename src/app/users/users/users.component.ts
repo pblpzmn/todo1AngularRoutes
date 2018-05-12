@@ -22,7 +22,7 @@ export class UsersComponent implements OnInit {
 
   init(){
     console.log("init");
-    let url = 'http://jsonplaceholder.typicode.com/users';
+    let url = 'https://jsonplaceholder.typicode.com/users';
     
     this.route.params.subscribe(params => {
       console.log(+params['id']);
